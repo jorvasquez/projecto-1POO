@@ -1,21 +1,26 @@
+
 package logicaDeNegocios;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Sirve para agrupar los datos de una persona;
  * @author Moises
  * @version 2.0
  */
+
+@XmlType(propOrder={"cedula","nombre","direccion","correoElectronico","telefono"})
 public class Persona{
   // instance variables - replace the example below with your own
   private String nombre;
   private String cedula;
-  private String direccion;
+  private Direccion direccion;
   private String correoElectronico;
   private String telefono;
   
   /**
    * Constructor for objects of class Persona
    */
-  public Persona(String pNombre, String pCedula, String pDireccion, 
+  public Persona(String pCedula,String pNombre, Direccion pDireccion, 
   String pCorreoElectronico, String pTelefono){
     setNombre(pNombre);
     setCedula(pCedula);

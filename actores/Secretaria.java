@@ -1,4 +1,4 @@
-package Actores;
+package actores;
 import logicaDeNegocios.*;
 
 /**
