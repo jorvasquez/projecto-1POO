@@ -53,4 +53,18 @@ public class Persona{
   public void setTelefono(String pTelefono){
     telefono = pTelefono;
   }
+  /**
+  * 
+  * Compara dos objetos de la clase Persona.
+  */
+  public boolean equals(Object o){
+    if(this == o)
+      return true; 
+    if(o==null)
+      return false;
+    if(this.getClass() != o.getClass())
+      return false;
+    Persona persona = (Persona) o;
+    return this.cedula==persona.getCedula();
+  }
 }

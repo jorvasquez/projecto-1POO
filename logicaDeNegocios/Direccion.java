@@ -2,34 +2,46 @@ package logicaDeNegocios;
 
 
 /**
- * Write a description of class Direccion here.
+ *Crea objetos para almacenar los datos de la direccion.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author [DigiteNombre]
+ * @version 1.0
+ * 
  */
-public class Direccion
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Direccion
-     */
-    public Direccion()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public class Direccion{
+  private String provincia;
+  private String canton;
+  private String distrito;
+  private String senias;
+  /**  
+   * Constructor para objetos de clase Direccion;
+  */
+  Direccion(String pProvincia, String pCanton, String pDistrito,
+  String pSenias){
+      
+  }
+  public String getSenias(){
+    return senias;
+  }
+  public void setSenias(String pSenias){
+    senias=pSenias;
+  }
+  public String getDistrito(){
+    return distrito;
+  }
+  public void setDistrito(String pDistrito){
+    distrito=pDistrito;
+  }
+  public String getCanton(){
+    return canton;
+  }
+  public void setCanton(String pCanton){
+    canton=pCanton;
+  }
+  public String getProvincia(){
+    return provincia;
+  }
+  public void setProvincia(String pProvincia){
+    provincia=pProvincia;
+  }
 }

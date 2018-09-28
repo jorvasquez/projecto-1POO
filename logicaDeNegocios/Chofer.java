@@ -7,7 +7,7 @@ public class Chofer
 {
   private String nombre;
   private String cedula;
-  private int numeroDeTelefono;
+  private String telefono;
   private Direccion direccion;
   protected ArrayList<Licencia> licencias;
 }
