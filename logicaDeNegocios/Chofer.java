@@ -10,6 +10,4 @@ public class Chofer
   private int numeroDeTelefono;
   private Direccion direccion;
   protected ArrayList<Licencia> licencias;
-  
-
 }

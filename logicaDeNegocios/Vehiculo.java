@@ -27,6 +27,7 @@ public class Vehiculo
     setColor(pColor);
     setPlaca(pPlaca);
     numeroDeVin++;
+    serviciosDeMantenimiento = new ArrayList<ServicioDeMantenimiento>();
   }
   public int getNumeroDeVin(){
     return numeroDeVin;

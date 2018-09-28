@@ -1,5 +1,3 @@
-package logicaDeNegocios;
-
 
 /**
  * Write a description of class Licencia here.
