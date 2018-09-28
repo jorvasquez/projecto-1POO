@@ -4,7 +4,7 @@ package logicaDeNegocios;
 /**
  *Crea objetos para almacenar los datos de la direccion.
  *
- * @author [DigiteNombre]
+ * @author Mariell, Moises, Jorge
  * @version 1.0
  * 
  */

@@ -5,7 +5,7 @@ import java.text.*;
 
 /**
  * Almacena los datos de un vehiculo.
- * @author Arturo
+ * @author Mariell, Moises, Jorge
  * @version 1.0.
  */
 public class Vehiculo

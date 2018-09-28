@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Sirve para agrupar los datos de una persona;
- * @author Moises
+ * @author Mariell, Moises, Jorge
  * @version 2.0
  */
 

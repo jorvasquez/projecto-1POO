@@ -3,7 +3,7 @@ import java.util.*;
 import java.text.*;
 /**
  * Almacena los datos de un Viaje ;
- * @author Arturo
+ * @author Mariell, Moises, Jorge
  * @version 2.0
  */
 public class Viaje

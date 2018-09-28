@@ -4,7 +4,7 @@ import java.text.*;
 
 /**
  * Almacena los datos de una licencia
- * @autor Moises
+ * @autor Mariell, Moises, Jorge
  * @version 1.0
  */
 public class Licencia{
