@@ -1,4 +1,6 @@
 package logicaDeNegocios;
+import javax.xml.bind.annotation.XmlType;
+
 
 
 /**
@@ -8,6 +10,7 @@ package logicaDeNegocios;
  * @version 1.0
  * 
  */
+@XmlType(propOrder={"provincia","canton","distrito","senias"})
 public class Direccion{
   private String provincia;
   private String canton;
@@ -16,9 +19,8 @@ public class Direccion{
   /**  
    * Constructor para objetos de clase Direccion;
   */
-  Direccion(String pProvincia, String pCanton, String pDistrito,
-  String pSenias){
-      
+  public Direccion(String pProvincia, String pCanton, String pDistrito,
+  String pSenias){    
   }
   public String getSenias(){
     return senias;

@@ -1,6 +1,7 @@
 
 package logicaDeNegocios;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlElement;
 
 /**
  * Sirve para agrupar los datos de una persona;
@@ -34,7 +35,7 @@ public class Persona{
   public String getCedula(){
     return cedula;
   }
-  public String getDireccion(){
+  public Direccion getDireccion(){
     return direccion;
   }
   public String getCorreoElectronico(){
@@ -49,7 +50,8 @@ public class Persona{
   public void setCedula(String pCedula){
     cedula = pCedula;
   }
-  public void setDireccion(String pDireccion){
+  @XmlElement
+  public void setDireccion(Direccion pDireccion){
     direccion = pDireccion;
   }
   public void setCorreoElectronico(String pCorreoElectronico){
