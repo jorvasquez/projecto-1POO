@@ -1,58 +1,49 @@
 package logicaDeNegocios;
-
+import java.util.*;
+import java.text.*;
 
 /**
- * Write a description of class Licencia here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Almacena los datos de una licencia
+ * @autor Moises
+ * @version 1.0
  */
 public class Licencia{
   // instance variables - replace the example below with your own
-  private int numero;
-  private String fechaDeEmision;
+  private int idDeLicencia;
+  private Date fechaDeEmision;
   private String tipo;
-  private String fechaDeExpiracion;
-
+  private Date fechaDeExpiracion;
   /**
-   * Constructor for objects of class Licencia
+   * Construcotor de la clase Licencia
    */
-  public Licencia(int pNumero, String pFechaDeEmision, String pTipo, String pFechaDeExpiracion){
-      // initialise instance variables
-      numero = pNumero;
-      fechaDeEmision = pFechaDeEmision;
-      tipo = pTipo;
-      fechaDeExpiracion = pFechaDeExpiracion;
+  public Licencia(int pIdDeLicencia, Date pFechaDeEmision, String pTipo, Date pFechaDeExpiracion){
+    setIdDeLicencia(pIdDeLicencia);
+    setFechaDeEmision(pFechaDeEmision);
+    setTipo(pTipo);
+    setFechaDeExpiracion(pFechaDeExpiracion);
   }
-
-  /**
-   * An example of a method - replace this comment with your own
-   *
-   * @param  y  a sample parameter for a method
-   * @return    the sum of x and y
-   */
-  public int getNumero(){
-    return numero;
+  public int getIdDeLicencia(){
+    return idDeLicencia;
   }
-  public String getFechaDeEmision(){
+  public Date getFechaDeEmision(){
     return fechaDeEmision;
   }
   public String getTipo(){
     return tipo;
   }
-  public String getFechaDeExpiracion(){
+  public Date getFechaDeExpiracion(){
     return fechaDeExpiracion;
   }
-  public void setNumero(int pNumero){
-    numero = pNumero;
+  public void setIdDeLicencia(int pIdDeLicencia){
+    idDeLicencia = pIdDeLicencia;
   }
-  public void setFechaDeEmision(String pFechaDeEmision){
+  public void setFechaDeEmision(Date pFechaDeEmision){
     fechaDeEmision = pFechaDeEmision;
   }
   public void setTipo(String pTipo){
     tipo = pTipo;
   }
-  public void setFechaDeExpiracion(String pFechaDeExpiracion){
+  public void setFechaDeExpiracion(Date pFechaDeExpiracion){
     fechaDeExpiracion = pFechaDeExpiracion;
   } 
 }

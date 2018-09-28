@@ -1,9 +1,8 @@
 package logicaDeNegocios;
 /**
- * Write a description of class Persona here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Sirve para agrupar los datos de una persona;
+ * @author Moises
+ * @version 2.0
  */
 public class Persona{
   // instance variables - replace the example below with your own
@@ -16,21 +15,14 @@ public class Persona{
   /**
    * Constructor for objects of class Persona
    */
-  public Persona(String pNombre, String pCedula, String pDireccion, String pCorreoElectronico, String pTelefono){
-    // initialise instance variables
-    nombre = pNombre;
-    cedula = pCedula;
-    direccion = pDireccion;
-    correoElectronico = pCorreoElectronico;
-    telefono = pTelefono;
+  public Persona(String pNombre, String pCedula, String pDireccion, 
+  String pCorreoElectronico, String pTelefono){
+    setNombre(pNombre);
+    setCedula(pCedula);
+    setDireccion(pDireccion);
+    setCorreoElectronico(pCorreoElectronico);
+    setTelefono(pTelefono);
   }
-
-  /**
-   * An example of a method - replace this comment with your own
-   *
-   * @param  y  a sample parameter for a method
-   * @return    the sum of x and y
-   */
   public String getNombre(){
     return nombre;
   }

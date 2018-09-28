@@ -1,7 +1,11 @@
 package logicaDeNegocios;
 import java.util.*;
 import java.text.*;
-
+/**
+ * Almacena los datos de un Viaje ;
+ * @author Arturo
+ * @version 2.0
+ */
 public class Viaje
 {
   private Direccion puntoDeSalida;
@@ -12,15 +16,28 @@ public class Viaje
   private String estado;//Inicia el confeccio
   private ArrayList<Persona> pasajeros;
   private Date fechaDeInicio;
-  private Date horaDeInicio;
   private Date fechaDeFinalizacion;
-  private Date horaDeFinalizacion;
   private Date fechaDeSolicitud;
-  private Date horaDeSolicitud;
   private static int scantViajes;
   private String identificador;
   private Vehiculo vehiculo;//despues
-  Viaje(Direcion puntoDeSalidad, Direccion destino, int kil){}
+   /**
+   * Construcotor de la clase Viaje
+   */
+  Viaje(Direccion pPuntoDeSalidad, Direccion pDestino, int pKilometrajeInicial,
+  int pKilometrajeFinal, ArrayList<Persona> pPasajeros, Date pFechaDeInicio,
+  Date pFechaDeFinalizacion, Date pFechaDeSolicitud){
+     setPasajeros(pPasajeros);
+     setPuntoDeSalida(pPuntoDeSalidad);
+     setDestino(pDestino);
+     setKilometrajeInicial(pKilometrajeInicial);
+     setKilometrajeFinal(pKilometrajeFinal);
+     setFechaDeInicio(pFechaDeInicio);
+     setFechaDeFinalizacion(pFechaDeFinalizacion);
+     setFechaDeSolicitud(pFechaDeSolicitud);
+     scantViajes++;
+     setIdentificador();
+  }
   private void setVehiculo(Vehiculo pVehiculo){
     vehiculo = pVehiculo;
   }

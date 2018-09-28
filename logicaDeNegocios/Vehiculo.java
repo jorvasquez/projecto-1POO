@@ -4,10 +4,9 @@ import java.text.*;
 
 
 /**
- * Write a description of class Vehiculo here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Almacena los datos de un vehiculo.
+ * @author Arturo
+ * @version 1.0.
  */
 public class Vehiculo
 {
@@ -21,6 +20,9 @@ public class Vehiculo
   private static int numeroDeVin;//vehicule identification number
   private String sedeDePertenencia;
   private String estado;//Fuera de servicio, En mantenimiento, En servicio
+  /**
+   * Constructor de la clase Vehiculo
+  */
   Vehiculo(int pPlaca, String pColor, String pMarca, int pCapacidad){
     setCapacidad(pCapacidad);
     setMarca(pMarca);
